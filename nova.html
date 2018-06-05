@@ -1,0 +1,25 @@
+<html>
+<head>
+<script language="JavaScript">
+
+function showTime() {
+  var timeNow = new Date();
+  var hours   = timeNow.getHours();
+  var minutes = timeNow.getMinutes();
+  var seconds = timeNow.getSeconds();
+  var timeString = "" + ((hours > 12) ? hours - 12 : hours);
+  timeString  += ((minutes < 10) ? ":0" : ":") + minutes;
+  document.htmlClock.timeField.value = timeString;
+  timerID = setTimeout("showTime()", 1000);
+}
+//-->
+</script>
+</head>
+<body onLoad="showTime()">
+<form name="htmlClock">
+<input type="text" 
+       name="timeField" 
+       size=14>
+</form>
+</body>
+</html>

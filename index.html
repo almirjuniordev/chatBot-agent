@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/chatbot.css">
+</head>
+<body>
+    
+    <a href="javascript:open_popup();">
+        <span>Chat</span>
+    </a>
+            
+    <section id="chat" class="avenue-messenger">
+        
+        <div class="menuChat">
+            <div class="items">
+                <span>
+                    <a href="javascript:close_popup('chat');" title="End Chat">&#10005;</a>
+                </span>
+            </div>
+            <div class="button">...</div>
+        </div>
+
+
+        <div class="agent-face">
+            <div class="half">
+            <img class="agent circle" src="https://botlist.co/system/BotList/Bot/logos/000/002/523/medium/BotList_avatar_2017.png" alt="ChatBot">
+            </div>
+        </div>
+
+
+        <div class="chatBot">
+            
+            <div class="chatBot-title">
+                <h1>ChatBot</h1>
+                <h2>Duvidas</h2>
+            </div>
+            <div class="messages">
+                <div class="messages-content"></div>
+            </div>
+            <div class="message-box">
+                <textarea type="text" class="message-input" placeholder="Escreva..."></textarea>
+                <button type="submit" class="message-submit">Enviar</button>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/dialogflow/ApiAi.js"></script>
+    <script src="assets/js/chatbot.js"></script>
+</body>
+</html>
