@@ -45,16 +45,11 @@ Body
     --------------------*/
     .chatBot {
     position: relative;
-    /*  top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);*/
     width: 100%;
     height: calc(100% - 15px);
     max-height: 500px;
     z-index: 10;
     overflow: hidden;
-    /*box-shadow: 0 5px 30px rgba(0, 0, 0, .2);*/
-    /* background: rgba(0, 0, 0, .5);*/
     background: transparent;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -93,7 +88,6 @@ Body
     padding: 0;
     }
     .chatBot-title h2 {
-    /* color: rgba(255, 255, 255, .8);*/
     font-size: 11px;
     letter-spacing: 1px;
     }
@@ -120,8 +114,6 @@ Body
     --------------------*/
     .messages {
     flex: 1 1 auto;
-    /*  color: rgba(255, 255, 255, .5);
-    color: #fff;*/
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -139,14 +131,12 @@ Body
     padding: 6px 10px 7px;
     border-radius: 20px 20px 20px 0;
     background: #eee;
-    /*rgba(0, 0, 0, 0.1);*/
     margin: 8px 0;
     font-size: 14px;
     line-height: 1.4;
     margin-left: 35px;
     position: relative;
     border: 1px solid #ccc;
-    /*text-shadow: 0 1px 1px rgba(0, 0, 0, .2);*/
     }
     .messages .message .timestamp {
     position: absolute;
@@ -154,7 +144,6 @@ Body
     font-size: 10px;
     color: #555;
     right: 30px;
-    /* color: rgba(255, 255, 255, .7);*/
     }
     .messages .message .checkmark-sent-delivered {
     position: absolute;
@@ -190,7 +179,6 @@ Body
     .messages .message.message-personal {
     float: right;
     text-align: right;
-    /*      background: linear-gradient(120deg, #ddd, #eee);*/
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 20px 20px 0 20px;
@@ -209,15 +197,11 @@ Body
     }
     .messages .message.loading::before {
     position: relative;
-    /*  top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);*/
     content: '';
     display: block;
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    /*  background: rgba(255, 255, 255, .5);*/
     background: #888;
     z-index: 2;
     margin-top: 4px;
@@ -236,15 +220,11 @@ Body
     }
     .messages .message.loading span::before {
     position: relative;
-    /*  top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);*/
     content: '';
     display: block;
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    /*  background: rgba(255, 255, 255, .5);*/
     background: #888;
     z-index: 2;
     margin-top: 4px;
@@ -254,15 +234,11 @@ Body
     }
     .messages .message.loading span::after {
     position: relative;
-    /*  top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);*/
     content: '';
     display: block;
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    /*  background: rgba(255, 255, 255, .5);*/
     background: #888;
     z-index: 2;
     margin-top: 4px;
@@ -281,11 +257,6 @@ Body
     width: 90%;
     background: #fff;
     margin: 2px auto;
-    /*-webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
-    box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);*/
-    /*background: rgba(0, 0, 0, 0.3);
-        border-top:1px solid #e3e3e3;*/
     padding: 10px;
     position: relative;
     border-radius: 20px;
@@ -297,7 +268,6 @@ Body
     border: none;
     outline: none !important;
     resize: none;
-    /* color: rgba(255, 255, 255, .8);*/
     font-size: 15px;
     height: 24px;
     margin: 0;
@@ -315,7 +285,6 @@ Body
     right: 10px;
     color: #4A90E2;
     border: none;
-    /* background: #c29d5f;*/
     background: #fff;
     font-size: 12px;
     text-transform: uppercase;
@@ -486,10 +455,6 @@ Body
     max-height: 460px !important;
     min-height: 220px !important;
     width: 320px;
-    /*  transform: translateY(0);
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-    */
     background: rgba(255, 255, 255, 0.9);
     position: fixed;
     right: 20px;
@@ -497,7 +462,6 @@ Body
     margin: auto;
     z-index: 10;
     box-shadow: 2px 10px 40px rgba(22, 20, 19, 0.4);
-    /*  transform: translateX(300px);*/
     -webkit-transition: 0.3s all ease-out 0.1s, transform 0.2s ease-in;
     -moz-transition: 0.3s all ease-out 0.1s, transform 0.2s ease-in;
     }
@@ -529,18 +493,9 @@ Body
     background-position: center center;
     border-radius: 99em;
     opacity: 0.5;
-    /*border: 1px solid #ccc;
-    color:#ccc;*/
-    /* -webkit-box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow:    0px -1px 2px 0px rgba(0, 0, 0, 0.5);
-    box-shadow:         0px -1px 2px 0px rgba(0, 0, 0, 0.5);*/
     }
 
     .close:hover {
-                /*
-    -webkit-box-shadow:  0 1px 1px rgba(0,0,0,0.3);
-    -moz-box-shadow:  0 1px 1px rgba(0,0,0,0.3);
-    box-shadow: 0 1px 1px rgba(0,0,0,0.3);*/
     opacity: 0.9;
     }
 
@@ -554,10 +509,6 @@ Body
     background-position: center center;
     border-radius: 99em;
     border: 2px solid #fff;
-    /*#4A90E2;*/
-    /* -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-    box-shadow: 0px 0px 10px rgba(0,0,0,.8);*/
     }
 
     .contact-icon .circle:hover {
@@ -627,7 +578,6 @@ Body
     line-height: 25px;
     height: 40px;
     border-top-right-radius: 20px;
-    /*  border-top-left-radius:20px;*/
     position: absolute;
     right: 0;
     padding-right: 10px;
@@ -641,20 +591,8 @@ Body
     background: #ccc;
     }
 
-    /*
-    .menuChat .button:hover .menuChat .items span {
-    display: block;
-    left: -2px;
-    opacity: 1;
-    }*/
     .menuChat .items span.active {
     opacity: 1;
-    /*border-radius:10px;
-    height: 180px;
-    width: 400px;
-    transform:translateY(0);
-    -webkit-transform:translateY(0);
-    -moz-transform:translateY(0);*/
     }
 
     .menuChat .items a {
@@ -682,7 +620,6 @@ Body
 
     .avenue-messenger div.agent-face {
         top: -10px !important;
-        /* left:initial !important;*/
     }
 
     .chatBot {
